@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container-fluid1{
+    background-color: rgb(251, 230, 234);
+    box-shadow: 0 0 10px black;
+}
+.container{
+    margin: auto;
+    padding: 10px;
+}
+.logo{
+    max-width: 30%;
+}
+.logo img{
+    width: 100px;
+}
+.menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.menu ul li{
+    display: inline-block;
+}
+.menu ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+}
+.menu ul li a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background: rgb(246, 61, 92);
+    display: block;
+    transition: 0.2s linear;
+}
+.menu ul li a:hover::after{
+    width: 100%;
+}
+.menu ul li a:hover{
+    color: rgb(246, 61, 92);
+}
+.icon ul{
+    list-style-type: none;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.icon ul li{
+    float: left;
+}
+.icon ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 15px 20px;
+    color: black;
+}
+.icon ul li a:hover{
+    color: rgb(232, 64, 92);
+    text-decoration: underline;
+}
+
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo img{
+        width: 120px;
+    }
+    .menu ul li a{
+        font-size: 16px;
+        padding: 10px 10px;
+    }
+    .icon ul li a{
+        padding: 10px 15px;
+    }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px){ 
+	.logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo img{
+        width: 120px;
+    }
+    .menu ul li a{
+        font-size: 16px;
+        padding: 10px 10px;
+    }
+    .icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .icon ul li a{
+        padding: 10px 15px;
+    }
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+	.logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo img{
+        width: 110px;
+    }
+    .menu ul li a{
+        font-size: 14px;
+        padding: 10px 10px;
+    }
+    .icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .icon ul li a{
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+}
